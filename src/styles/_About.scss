@@ -1,0 +1,112 @@
+@use './Colors' as *;
+.about
+{
+    position:relative;
+    margin:100px 50px;
+    border:1px solid black;
+    backdrop-filter: blur(13px);
+    background-color: rgb(255,255,255,35%);
+    &::after
+    {
+        content: "";
+        position: absolute;
+        height: 0;
+        left:0;
+        bottom:0;
+        width: 2px;
+        background-color: $blue1;
+    }
+    &::before
+    {
+        content: "";
+        position: absolute;
+        height: 0;
+        right:0;
+        top:0;
+        width: 2px;
+        background-color: $blue1;
+    }
+    &:hover::after,&:hover::before
+    {
+    animation: progress3 0.5s linear forwards;
+    }
+    @keyframes progress3 {
+        10% {
+          height: 10%;
+        }
+        20% {
+            height:  20%;
+        }
+        40% {
+            height: 40%;
+        }
+        50% {
+            height: 50%;
+        }
+        60% {
+            height:  50%;
+        }
+        80% {
+            height:  80%;
+        }
+        90% {
+            height: 90%;
+        }
+        100% {
+            height:  100%;
+        }
+    }
+    img 
+    {
+        width:60px;
+    }
+   
+    .content
+    {
+       
+        align-items: center;
+        margin:20px 0;
+        font-size: 22px;
+        color:$blue1;
+        font-family: 'Buble';
+        gap:20px;
+        padding:20px;
+        .me
+        {
+           
+            img
+            {
+                width:360px;
+                border-radius: 50%;
+            }
+        }
+    }
+    li
+    {
+        color:rgb(255,255,255,70%);
+        align-items: center;
+        span
+        {
+            width:127px;
+            margin-right: 25px;
+            font-size: 30px;
+            border-radius: 50px;
+        }
+        list-style: none;
+        margin-bottom: 50px;
+        img 
+        {
+           width:30px;
+           display: none;
+        }
+        &:hover
+        {
+            color:#FFF2F9;
+        }
+    }
+    ul
+    {
+        width:fit-content;
+        margin:auto;
+    }
+}

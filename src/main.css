@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Buble";
+  src: url("./fonts/Bubble Love Demo.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "maxigo";
+  src: url("./fonts/Rofane.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "cheri";
+  src: url("./fonts/Andina Demo.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  padding: 50px;
+}
+.title div {
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.title p {
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #FA4EAB;
+  font-family: "Buble";
+  letter-spacing: 0.04rem;
+  background-color: #E3F4F4;
+  padding: 20px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.title img {
+  width: 80px;
+  height: 80px;
+  margin-top: -32px;
+}
+.title h1 {
+  color: #1C6DD0;
+  font-family: "cheri";
+  font-weight: 600;
+}/*# sourceMappingURL=main.css.map */

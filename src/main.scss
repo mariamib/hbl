@@ -1,0 +1,60 @@
+@use './styles/Colors' as *;
+@font-face {
+    font-family: 'Buble';
+    src:
+        url('./fonts/Bubble\ Love\ Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'maxigo';
+    src:
+        url('./fonts/Rofane.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'cheri';
+    src:
+        url('./fonts/Andina\ Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  body
+  {
+    margin:0;
+    padding:0;
+  }
+  .title
+  {
+      padding:50px;
+      div
+      {
+          margin: auto;
+          width: fit-content;
+      }
+      p
+      {
+          margin: auto;
+          width: fit-content;
+          color:$pink;
+          font-family: 'Buble';
+          letter-spacing: 0.04rem;
+          background-color: $pastel;
+          padding:20px;
+          font-size: 20px;
+          margin-top: 30px;
+      }
+      img
+      {
+          width:80px;
+          height:80px;
+          margin-top: -32px;
+      }
+      h1
+      {
+          color:$blue1;
+          font-family: 'cheri';
+          font-weight: 600;
+      }
+  }
